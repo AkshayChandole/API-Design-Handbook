@@ -63,4 +63,15 @@ The API gateway takes the client’s calls and routes them to the appropriate mi
 
 ---
 
+# [API endpoints](#api-endpoints)
+It’s imperative to locate the services of microservice architecture in order to acquire their functionality. Therefore, it’s required to define a mechanism for APIs to access the exact location where the service is being provided. We refer to those digital locations as the endpoints of APIs. In a communication channel, the endpoint is one end of a system we can reach with the help of a URL. A user of the service sends a request to the specified endpoint (the URL) to perform operations using the resources available from that endpoint. Usually, the API provider defines a set of endpoints to make the resources available to the users through an HTTP request. The endpoints are also helpful as their names indicate the type of operations they perform (like GET, POST, PUT, and DELETE in case of REST API).
 
+The endpoints are accessed by appending the endpoint name after the base URL of an API. For example, to request information about all the users published on https://jsonplaceholder.typicode.com, the following endpoint is interacted with using an HTTP GET request.
+
+```
+HTTP Request - https://jsonplaceholder.typicode.com/users
+Base URL - https://jsonplaceholder.typicode.com
+Endpoint for getting list of users - /users
+```
+
+---
