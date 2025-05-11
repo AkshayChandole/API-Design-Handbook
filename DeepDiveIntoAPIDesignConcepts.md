@@ -11,7 +11,7 @@ Why is the API being developed?
 
 ---
 
-# [API design considerations](#api-design-considerations)
+## [API design considerations](#api-design-considerations)
 The following illustration shows the key points for better API design:
 ![image](https://github.com/user-attachments/assets/daf0e7ef-07a1-49e1-a2fa-cb61a33292dc)
 - Identify the potential users in terms of their relationship with the business (partners, customers, or external developers) for which API is being developed. This identification will define the level of access and type of authentication to be implemented in the API. The types of users will also help identify and implement the correct architectural style, REST, gRPC, and so on.
@@ -23,3 +23,26 @@ The following illustration shows the key points for better API design:
 
 ---
 
+## [API requirements](#api-requirements)
+We need to define both the functional and non-functional requirements of our APIs. Take a look at both the requirements types below:
+- **Functional requirements** define the desired end function of a system and its required parameters. For example, in a video streaming service, the ability to post comments on a video is a functional requirement because it has a defined end goal and parameters.
+- **Non-functional requirements** define the performance and quality of the services the API provides. Continuing from the video streaming example above, the ability of an API to quickly respond to the user (low latency) or a number of users posting comments simultaneously (scalability) are forms of non-functional requirements. Other non-functional requirements include availability, reliability, consistency, and so on.
+![image](https://github.com/user-attachments/assets/67c6631c-45ae-4d5c-9798-89755cb0459a)
+
+## [Characteristics of a Good API Design](#characteristics-of-a-good-api-design)
+
+| Characteristic                                      | Explanation                                                                                                                                                       |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Separation between API specification and its implementation | Includes separation between the specification and its implementation, allowing for iterative improvements and changes to the API implementation.                  |
+| Concurrency                                         | Amount of API calls that can be active simultaneously in a specified period, ensuring that computing resources are available for all users.                     |
+| Dynamic rate-limiting                               | Strategy to limit access to the API within a timeframe to avoid overwhelming the API with an onslaught of requests.                                              |
+| Security                                            | Well-defined security mechanisms for authentication and authorization protocols that define who can access the API and what parts of the API they can access.  |
+| Error warnings and handling                         | Allows effective error handling to prevent frustration on the consumer end and reduces debugging efforts for developers.                                         |
+| Architectural styles of an API                     | Possible to follow different architectural styles according to its requirements.                                                                                 |
+| Minimal but comprehensive and cohesive              | API should be as terse as possible while still fulfilling its goals.                                                                                            |
+| Stateless or state-bearing                          | API functions can be stateless and/or maintain their state, but idempotency (operations yielding the same result when performed multiple times) is a desired feature. |
+| User adoption                                       | APIs with good adoption often have a devoted user community that helps improve the API over many iterations.                                                     |
+| Fault tolerance                                     | A well-designed API can be made fault-tolerant by using mechanisms that ensure continued operation, even if some components malfunction.                         |
+| Performance measurement                             | There should be appropriate provisions for collecting monitoring data and early warning systems.                                                                  |
+
+---
