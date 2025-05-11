@@ -27,6 +27,7 @@ The following illustration shows the key points for better API design:
 We need to define both the functional and non-functional requirements of our APIs. Take a look at both the requirements types below:
 - **Functional requirements** define the desired end function of a system and its required parameters. For example, in a video streaming service, the ability to post comments on a video is a functional requirement because it has a defined end goal and parameters.
 - **Non-functional requirements** define the performance and quality of the services the API provides. Continuing from the video streaming example above, the ability of an API to quickly respond to the user (low latency) or a number of users posting comments simultaneously (scalability) are forms of non-functional requirements. Other non-functional requirements include availability, reliability, consistency, and so on.
+  
 ![image](https://github.com/user-attachments/assets/67c6631c-45ae-4d5c-9798-89755cb0459a)
 
 ## [Characteristics of a Good API Design](#characteristics-of-a-good-api-design)
