@@ -7,7 +7,7 @@ Using an API, an application can request services from another application witho
 
 ---
 
-# [Benefits of APIs](#benefits-of-apis)
+## [Benefits of APIs](#benefits-of-apis)
 Some major advantages of using APIs are as follows:
 
 * **Complexity abstraction:** New services are often complex, with many moving parts. APIs help us to hide all that complexity within a service away from the consumer. Doing so has many benefits, such as the flexibility to change the internals of the service without changing the interface. With APIs, the caller of the service can focus on their application without worrying about the internal complexity of the calling service. The caller only has to focus on the interface and return data from the callee.
@@ -34,4 +34,17 @@ The APIs can be divided into four types based on users and their access levels, 
 - **Composite APIs** allow developers to bundle the request call for different services and get a unified response from different requested resources. Composite APIs are handy when a developer needs data from different servers without making a separate API call to each server. It makes the system work faster and more efficiently by reducing the number of API calls and complexity.
 
 ---
+
+## [API Types Overview](#api-types-overview)
+
+
+| API Type      | Authentication Type                          | Potential Users                     | Examples                          |
+|---------------|---------------------------------------------|-------------------------------------|-----------------------------------|
+| Public APIs   | Publicly accessible with API keys           | B2C (business-to-consumer)         | Google Maps, Weather APIs         |
+| Private APIs  | No authentication                            | B2B (business-to-business), B2C, B2E (business-to-employee) | Amazon S3 API for data storage |
+| Partner APIs  | Authorized access with access tokens/license | B2B, B2C                           | Amazon APIs for partners          |
+| Composite APIs| Depends on the connected API’s authentication| B2B, B2C, B2E                      | Payment APIs (Stripe, PayPal)    |
+
+---
+
 
